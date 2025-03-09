@@ -19,7 +19,7 @@ def cria_app():
 Por fim, escrevemos as instruções para inicializarmos o App
 
 '''
-if __name__ == '__main__':
+if _name_ == '_main_':
     app = cria_app()
 
     @app.callback(
