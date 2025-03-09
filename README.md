@@ -19,7 +19,8 @@ def cria_app():
 Por fim, escrevemos as instruções para inicializarmos o App
 
 '''
-if _name_ == '_main_':
+
+if __name__ == '__main__':
     app = cria_app()
 
     @app.callback(
@@ -34,4 +35,5 @@ if _name_ == '_main_':
         fig1, fig2, fig3 = criar_grafico(selecao_material)
         return [fig1, fig2, fig3]
     app.run_server(debug=True, port=8050)  # Default 8050
+    
 '''
